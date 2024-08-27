@@ -67,7 +67,7 @@ async function commit(letter){
             guessword='';
             if(lossCounter === 6){
                 setTimeout(function(){
-                    alert('You Lose. Press F5 to try again');
+                    alert('You Lose. The correct word was ' + actualword);
                 },100);
             }
         }
