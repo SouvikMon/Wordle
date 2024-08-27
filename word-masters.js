@@ -112,7 +112,7 @@ function isLetter(letter) {
 
 async function init(){
     setLoading(true);
-    const response = await fetch("https://words.dev-apis.com/word-of-the-day");
+    const response = await fetch("https://words.dev-apis.com/word-of-the-day?random=1");
     const data = await response.json();
     //const { word } = await response.json();
     const word = data.word.toUpperCase();
