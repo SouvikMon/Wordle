@@ -59,7 +59,7 @@ async function commit(letter){
                 done = true;
                 setTimeout(function(){
                     alert('You Win. The correct word is indeed ' + actualword);
-                }, 10);
+                }, 100);
                 return;
             }
             buffer = 0;
@@ -68,7 +68,7 @@ async function commit(letter){
             if(lossCounter === 6){
                 setTimeout(function(){
                     alert('You Lose. Press F5 to try again');
-                },10);
+                },100);
             }
         }
     }
